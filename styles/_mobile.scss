@@ -75,6 +75,8 @@
       text-align: center;
       color: $color-light;
       cursor: pointer;
+      box-shadow: inset 0 0 0 2px transparent;
+      transition: 0.4s;
 
       &_active {
         background-color: $color-main;
@@ -92,6 +94,7 @@
     line-height: $lh-m-px;
     color: $color-light;
     text-decoration: none;
+    transition: 0.4s;
 
     &:hover {
       color: $color-main;
@@ -102,9 +105,15 @@
     display: none;
     text-decoration: none;
 
-    &-img path:hover {
+    &-img path {
+      transition: 0.4s;;
+      
+          &:hover {
       fill: $color-add;
     }
+
+    }
+    
   }
 
   .header__address::after,
@@ -126,6 +135,8 @@
     font-size: $fz-m-px;
     line-height: $lh-m-px;
     color: $color-light;
+    transition: 0.4s;
+
 
     &:hover {
       color: $color-main;
@@ -215,6 +226,7 @@
       font-weight: 500;
       text-decoration: none;
       color: $color-add;
+      transition: 0.4s;
 
       &:hover {
         border-bottom: none;
@@ -263,7 +275,8 @@
       @extend %main-title-text;
       color: $color-add2;
       white-space: nowrap;
-      cursor: pointer;
+      cursor: pointer; 
+      transition: 0.4s;
 
       &:hover {
         color: #f0145a;
@@ -510,6 +523,12 @@
     flex-basis: 100%;
     flex-grow: 1;
     height: 120px;
+    transition: 0.2s;
+
+    &:hover{
+      z-index: 1000;
+      scale: 1.04;
+    }
   }
 
   @each $item in $clients {
@@ -656,6 +675,7 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       color: $color-add;
+      transition: 0.4s;
 
       &:hover {
         color: $color-main;
@@ -675,6 +695,7 @@
       text-decoration: none;
       font-weight: bold;
       color: #46466e;
+      transition: 0.4s;
 
       &:hover {
         color: $color-main;
@@ -685,6 +706,7 @@
       text-decoration: none;
       font-weight: bold;
       color: $color-add;
+      transition: 0.4s;
 
       &:hover {
         color: $color-main;
